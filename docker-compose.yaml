@@ -16,13 +16,13 @@ services:
     networks:
       - internal
   api-02:
-    image: NTPxz/api-02:latest
+    image: mrpachara/api-02-fpm:latest
     environment:
       - ACCESS_TOKEN=${ACCESS_TOKEN}
     networks:
       - internal
   api-01:
-    image: NTPxz/api-01-fpm:latest
+    image: NTPxz/api-01:latest
     environment:
       - ACCESS_TOKEN=${ACCESS_TOKEN}
     networks:
